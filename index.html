@@ -41,7 +41,7 @@
             <div class="row align-items-center justify-content-between">
                <img class="logo-desing" src="images/logo/logo.png" id="img-logo" alt="">
                <nav class="nav">
-                  <a href="#home">Inicio</a>
+                  <a href="#js-header">Inicio</a>
                   <a href="#about">Nosotros</a>
                   <a href="#menu">Menú</a>
                   <!-- <a href="#reviews">Reseñas</a> -->
@@ -62,15 +62,83 @@
       <!-- header section ends -->
 
       <!-- home section starts  -->
-      <section class="home home-1" id="home">
-         <div class="home-text">
-            <img style="width: 100%" src="./images/vectores/text-v1.svg" alt="">
+      <section class="slideshow" id="js-header">
+         <div class="slideshow__slide js-slider-home-slide is-current" data-slide="1">
+            <div class="slideshow__slide-background-parallax background-absolute js-parallax" data-speed="-1"
+               data-position="top" data-target="#js-header">
+               <div class="slideshow__slide-background-load-wrap background-absolute">
+                  <div class="slideshow__slide-background-load background-absolute">
+                     <div class="slideshow__slide-background-wrap background-absolute">
+                        <div class="slideshow__slide-background background-absolute">
+                           <div class="slideshow__slide-image-wrap background-absolute">
+                              <div class="slideshow__slide-image background-absolute img-1-slideshow">
+                                 <div class="home" id="home">
+                                    <div class="content">
+                                       <img style="width: 90%" src="images/vectores/text-v1.svg" alt="">
+                                    </div>
+                                    <div class="image">
+                                       <img src="images/logo/logo.png" alt="">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="slideshow__slide-caption">
+               <div class="slideshow__slide-caption-text">
+                  <div class="container js-parallax" data-speed="2" data-position="top" data-target="#js-header">
+                     <div class="col-12 mx-auto" data-aos="zoom-in-up" data-aos-delay="500">
+                     </div>
+                     <!-- <a class="slideshow__slide-caption-subtitle -load o-hsub -link" href="#">
+                             <span class="slideshow__slide-caption-subtitle-label"><b>DigitalFuture.</b>agency</p></span>
+                         </a> -->
+                  </div>
+               </div>
+            </div>
          </div>
-         <!-- Home Image -->
-         <div class="home-img">
-            <img style="width: 100%" src="./images/img-home.png" alt="">
+
+         <div class="slideshow__slide js-slider-home-slide is-next" data-slide="2">
+            <div class="slideshow__slide-background-parallax background-absolute js-parallax" data-speed="-1"
+               data-position="top" data-target="#js-header">
+               <div class="slideshow__slide-background-load-wrap background-absolute">
+                  <div class="slideshow__slide-background-load background-absolute">
+                     <div class="slideshow__slide-background-wrap background-absolute">
+                        <div class="slideshow__slide-background background-absolute">
+                           <div class="slideshow__slide-image-wrap background-absolute">
+                              <div class="slideshow__slide-image background-absolute img-2-slideshow">
+                                 <div class="home" id="home">
+                                    <div class="content">
+                                       <img style="width: 90%" src="images/vectores/text-v2.svg" alt="">
+                                    </div>
+                                    <div class="image">
+                                       <img src="images/menu/pollo/1-pollo-asado.png" alt="">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="slideshow__slide-caption">
+               <div class="slideshow__slide-caption-text">
+                  <div class="container js-parallax" data-speed="2" data-position="top" data-target="#js-header">
+                     <div class="col-12 mx-auto" data-aos="zoom-in-up" data-aos-delay="500">
+                     </div>
+                     <!-- <a class="slideshow__slide-caption-subtitle -load o-hsub -link" href="#">
+                             <span class="slideshow__slide-caption-subtitle-label"><b>DigitalFuture.</b>agency</p></span>
+                         </a> -->
+                  </div>
+               </div>
+            </div>
          </div>
       </section>
+      <!-- </section> -->
+      <!-- END HERO -->
       <!-- home section ends -->
 
       <!-- about section starts  -->
@@ -79,13 +147,12 @@
             <h3 class="own-script">Acerca de</h3>
             <h3 class="title">Nosotros</h3>
             <div class="icons">
-               <p><b>El Pollo Granjero</b> Trabajamos en equipo para satisfacer los deseos y gustos de nuestros clientes y
+               <p><b>El Pollo Granjero</b> Trabajamos en equipo para satisfacer los deseos y gustos de nuestros clientes
+                  y
                   utilizamos todos nuestros servicios para ofrecer un menú de platos exquisitos.</p>
             </div>
-            <a href="" target="_blank"> <i
-                  class="btn fab fa-facebook-f btn-contact"></i></a>
-            <a href="" target="_blank"> <i
-                  class="btn fab fa-instagram btn-contact"></i>
+            <a href="https://www.facebook.com/profile.php?id=100089768136207" target="_blank"> <i class="btn fab fa-facebook-f btn-contact"></i></a>
+            <a href="https://www.instagram.com/pollo_granjero_asadero/" target="_blank"> <i class="btn fab fa-instagram btn-contact"></i>
             </a>
          </div>
          <div class="content about-img">
@@ -105,7 +172,6 @@
          <div class="service-box">
             <div class="box">
                <i class="fas fa-concierge-bell"></i>
-
                <h3 class="sub-services">Excelente</h3>
                <h3 class="title-services">Calidad</h3>
                <p>Nuestra meta es siempre ofrecer productos de calidad que satisfagan a nuestros clientes y nuestro
@@ -116,18 +182,17 @@
                <i class="fas fa-credit-card"></i>
                <h3 class="sub-services">Pagos y</h3>
                <h3 class="title-services">Tranferencias</h3>
-
                <p>Aceptamos pagos por tarjeta de débito o crédito o aplicaciones financieras (Nequi o Daviplata).</p>
             </div>
             <div class="box">
                <i class="fas fa-map-marked-alt"></i>
                <h3 class="sub-services">Excelente</h3>
                <h3 class="title-services">Ubicación</h3>
-
-               <p>Estamos cerca de ti y te ofrecemos los mejores servicios en nuestra zona y entregamos tu domicilio a la puerta de tu casa en el menor tiempo.</p>
+               <p>Estamos cerca de ti y te ofrecemos los mejores servicios en nuestra zona y entregamos tu domicilio a
+                  la puerta de tu casa en el menor tiempo.</p>
             </div>
          </div>
-         
+
       </section>
       <!-- service sectioin ends -->
 
@@ -138,11 +203,11 @@
             <h3 class="sub-menu">Menú</h3>
             <h3 class="title-menu">Pollo</h3>
          </div>
-         <div id="customers-testimonials-bro" class="owl-carousel owl-theme owl-carousel-bro">
+         <div id="customers-testimonials-bro" class="owl-carousel owl-theme owl-carousel-bro" style="margin-top:-4rem">
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/pollo/" alt="" class="menu__img">
+                     <img src="images/menu/pollo/1-pollo-asado.png" alt="" class="menu__img">
                      <h3 class="menu__name"><b>1 Pollo Asado / Frito</b></h3>
                      <p class="menu__detail">Acompañado de papa y arepa.</p>
                   </div>
@@ -160,12 +225,12 @@
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
             </div>
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/pollo/" alt="" class="menu__img">
+                     <img src="images/menu/pollo/1-pollo-broaster.png" alt="" class="menu__img">
                      <h3 class="menu__name"><b>1 Pollo Broaster</b></h3>
                      <p class="menu__detail">Acompañado de papa francesa y arepa.</p>
                   </div>
@@ -178,12 +243,12 @@
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
             </div>
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/pollo/" alt="" class="menu__img">
+                     <img src="images/menu/pollo/medio-pollo-asado.png" alt="" class="menu__img">
                      <h3 class="menu__name"><b>1/2 Pollo Asado / Frito</b></h3>
                      <p class="menu__detail">Acompañado de papa y arepa.</p>
                   </div>
@@ -201,12 +266,12 @@
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
             </div>
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/pollo/" alt="" class="menu__img">
+                     <img src="images/menu/pollo/medio-pollo-broaster.png" alt="" class="menu__img">
                      <h3 class="menu__name"><b>1/2 Pollo Broaster</b></h3>
                      <p class="menu__detail">Acompañado de papa francesa y arepa.</p>
                   </div>
@@ -219,12 +284,12 @@
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
             </div>
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/pollo/" alt="" class="menu__img">
+                     <img src="images/menu/pollo/cuarto-pollo-asado.png" alt="" class="menu__img">
                      <h3 class="menu__name"><b>1/4 Pollo Asado</b></h3>
                      <p class="menu__detail">Acompañado de papa y arepa.</p>
                   </div>
@@ -237,12 +302,12 @@
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
             </div>
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/pollo/" alt="" class="menu__img">
+                     <img src="images/menu/pollo/cuarto-pollo-broaster.png" alt="" class="menu__img">
                      <h3 class="menu__name"><b>1/4 Pollo Broaster</b></h3>
                      <p class="menu__detail">Acompañado de papa francesa y arepa.</p>
                   </div>
@@ -255,7 +320,7 @@
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
             </div>
          </div>
          <!-- END MENÚ POLLO -->
@@ -264,13 +329,14 @@
             <h3 class="sub-menu">Super</h3>
             <h3 class="title-menu">Combos</h3>
          </div>
-         <div id="customers-testimonials-acom" class="owl-carousel owl-theme owl-carousel-acom">
+         <div id="customers-testimonials-acom" class="owl-carousel owl-theme owl-carousel-acom" style="margin-top:-4rem">
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/super-combos/" alt="" class="menu__img">
+                     <img src="images/menu/super-combos/combo-1.png" alt="" class="menu__img">
                      <h3 class="menu__name"><b>Combo 1</b></h3>
-                     <p class="menu__detail">1 Pollo asado o frito, papa salada, arepa, plátano, gaseosa 1.5 lt y sopita.</p>
+                     <p class="menu__detail">1 Pollo asado o frito, papa salada, arepa, plátano, gaseosa 1.5 lt y
+                        sopita.</p>
                   </div>
                   <div class="container">
                      <div class="row details">
@@ -286,14 +352,15 @@
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
             </div>
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/super-combos/" alt="" class="menu__img">
+                     <img src="images/menu/super-combos/combo-2.png" alt="" class="menu__img">
                      <h3 class="menu__name"><b>Combo 2</b></h3>
-                     <p class="menu__detail">1 + 1/2 Pollo asado o frito, papa salada, arepa, plátano, gaseosa 1.5 lt y sopita.</p>
+                     <p class="menu__detail">1 + 1/2 Pollo asado o frito, papa salada, arepa, plátano, gaseosa 1.5 lt y
+                        sopita.</p>
                   </div>
                   <div class="container">
                      <div class="row details">
@@ -309,12 +376,12 @@
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
             </div>
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/super-combos/" alt="" class="menu__img">
+                     <img src="images/menu/super-combos/combo-3.png" alt="" class="menu__img">
                      <h3 class="menu__name"><b>Combo 3</b></h3>
                      <p class="menu__detail">2 Pollos asados o fritos, papa salada, arepa, plátano y gaseosa 1.5 lt.</p>
                   </div>
@@ -332,14 +399,15 @@
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
             </div>
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/super-combos/" alt="" class="menu__img">
+                     <img src="images/menu/super-combos/combo-familiar.png" alt="" class="menu__img">
                      <h3 class="menu__name"><b>Combo Familiar</b></h3>
-                     <p class="menu__detail">1 Pollo asado o frito, papa salada, arepa, plátano, gaseosa 1.5 lt y sopa de menudencias con arroz.</p>
+                     <p class="menu__detail">1 Pollo asado o frito, papa salada, arepa, plátano, gaseosa 1.5 lt y sopa
+                        de menudencias con arroz.</p>
                   </div>
                   <div class="container">
                      <div class="row details">
@@ -355,12 +423,12 @@
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
             </div>
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/super-combos/" alt="" class="menu__img">
+                     <img src="images/menu/super-combos/combo-4.png" alt="" class="menu__img">
                      <h3 class="menu__name"><b>Combo 4</b></h3>
                      <p class="menu__detail">1 Pollo broaster, papa francesa, yuca, arepa, patacón y gaseosa 1.5 lt.</p>
                   </div>
@@ -373,14 +441,15 @@
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
             </div>
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/super-combos/" alt="" class="menu__img">
+                     <img src="images/menu/super-combos/combo-5.png" alt="" class="menu__img">
                      <h3 class="menu__name"><b>Combo 5</b></h3>
-                     <p class="menu__detail">1 + 1/2 Pollo broaster, papa francesa, yuca, arepa, patacón y gaseosa 1.5 lt.</p>
+                     <p class="menu__detail">1 + 1/2 Pollo broaster, papa francesa, yuca, arepa, patacón y gaseosa 1.5
+                        lt.</p>
                   </div>
                   <div class="container">
                      <div class="row details">
@@ -391,14 +460,15 @@
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
             </div>
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/super-combos/" alt="" class="menu__img">
+                     <img src="images/menu/super-combos/combo-6.png" alt="" class="menu__img">
                      <h3 class="menu__name"><b>Combo 6</b></h3>
-                     <p class="menu__detail">2 Pollos broaster, papa francesa, yuca, arepa, patacón y gaseosa 1.5 lt.</p>
+                     <p class="menu__detail">2 Pollos broaster, papa francesa, yuca, arepa, patacón y gaseosa 1.5 lt.
+                     </p>
                   </div>
                   <div class="container">
                      <div class="row details">
@@ -409,14 +479,15 @@
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
             </div>
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/super-combos/" alt="" class="menu__img">
+                     <img src="images/menu/super-combos/combo-familiar-broaster.png" alt="" class="menu__img">
                      <h3 class="menu__name"><b>Combo Familiar Broaster</b></h3>
-                     <p class="menu__detail">1 Pollo broaster, papa francesa, yuca, arepa, patacón, gaseosa 1.5 lt y sopa de menudencias con arroz.</p>
+                     <p class="menu__detail">1 Pollo broaster, papa francesa, yuca, arepa, patacón, gaseosa 1.5 lt y
+                        sopa de menudencias con arroz.</p>
                   </div>
                   <div class="container">
                      <div class="row details">
@@ -427,14 +498,15 @@
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
             </div>
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/super-combos/" alt="" class="menu__img">
+                     <img src="images/menu/super-combos/combo-mixto.png" alt="" class="menu__img">
                      <h3 class="menu__name"><b>Combo Mixto</b></h3>
-                     <p class="menu__detail">1/2 Pollo asado o frito, 1/2 Pollo broaster, papa francesa, patacón, yuca, papa salada y gaseosa 1.5 lt.</p>
+                     <p class="menu__detail">1/2 Pollo asado o frito, 1/2 Pollo broaster, papa francesa, patacón, yuca,
+                        papa salada y gaseosa 1.5 lt.</p>
                   </div>
                   <div class="container">
                      <div class="row details">
@@ -450,7 +522,7 @@
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
             </div>
          </div>
          <!-- END MENÚ SUPER COMBOS -->
@@ -459,11 +531,11 @@
             <h3 class="sub-menu">Carnes &</h3>
             <h3 class="title-menu">Parrilla</h3>
          </div>
-         <div id="customers-testimonials" class="owl-carousel owl-theme owl-carousel-class">
+         <div id="customers-testimonials" class="owl-carousel owl-theme owl-carousel-class" style="margin-top:-4rem">
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/carnes-y-parrilla/" alt="" class="menu__img">
+                     <img src="images/menu/carnes-y-parrilla/churrasco.png" alt="" class="menu__img">
                      <h3 class="menu__name"><b>Churrasco</b></h3>
                      <p class="menu__detail">Acompañado de papa francesa, yuca, patacón y ensalada.</p>
                   </div>
@@ -476,12 +548,12 @@
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
             </div>
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/carnes-y-parrilla/" alt="" class="menu__img">
+                     <img src="images/menu/carnes-y-parrilla/carne-asada.png" alt="" class="menu__img">
                      <h3 class="menu__name"><b>Carne Asada</b></h3>
                      <p class="menu__detail">Acompañado de papa francesa, yuca, patacón y ensalada.</p>
                   </div>
@@ -494,12 +566,12 @@
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
             </div>
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/carnes-y-parrilla/" alt="" class="menu__img">
+                     <img src="images/menu/carnes-y-parrilla/filete-de-pechuga.png" alt="" class="menu__img">
                      <h3 class="menu__name"><b>Filete de Pechuga</b></h3>
                      <p class="menu__detail">Acompañado de papa francesa, yuca, patacón y ensalada.</p>
                   </div>
@@ -512,12 +584,12 @@
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
             </div>
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/carnes-y-parrilla/" alt="" class="menu__img">
+                     <img src="images/menu/carnes-y-parrilla/tabla-mixta.png" alt="" class="menu__img">
                      <h3 class="menu__name"><b>Tabla mixta tres carnes</b></h3>
                      <p class="menu__detail">Acompañado de papa francesa, yuca, patacón y ensalada.</p>
                   </div>
@@ -530,12 +602,12 @@
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
             </div>
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/carnes-y-parrilla/" alt="" class="menu__img">
+                     <img src="images/menu/carnes-y-parrilla/chuleta-de-cerdo.png" alt="" class="menu__img">
                      <h3 class="menu__name"><b>Chuleta de Cerdo</b></h3>
                      <p class="menu__detail">Acompañado de papa francesa, yuca, patacón y ensalada.</p>
                   </div>
@@ -548,12 +620,12 @@
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
             </div>
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/carnes-y-parrilla/" alt="" class="menu__img">
+                     <img src="images/menu/carnes-y-parrilla/lomo-de-cerdo.png" alt="" class="menu__img">
                      <h3 class="menu__name"><b>Lomo de Cerdo</b></h3>
                      <p class="menu__detail">Acompañado de papa francesa, yuca, patacón y ensalada.</p>
                   </div>
@@ -566,12 +638,12 @@
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
             </div>
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/carnes-y-parrilla/" alt="" class="menu__img">
+                     <img src="images/menu/carnes-y-parrilla/costillas-bbq.png" alt="" class="menu__img">
                      <h3 class="menu__name"><b>Costillas de Cerdo</b></h3>
                      <p class="menu__detail">Acompañado de papa francesa, yuca, patacón y ensalada.</p>
                   </div>
@@ -584,12 +656,12 @@
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
             </div>
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/carnes-y-parrilla/" alt="" class="menu__img">
+                     <img src="images/menu/carnes-y-parrilla/mojarra-frita.png" alt="" class="menu__img">
                      <h3 class="menu__name"><b>Mojarra</b></h3>
                      <p class="menu__detail">Acompañado de papa francesa, yuca, patacón y ensalada.</p>
                   </div>
@@ -602,12 +674,12 @@
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
             </div>
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/carnes-y-parrilla/" alt="" class="menu__img">
+                     <img src="images/menu/carnes-y-parrilla/bagre-frito.png" alt="" class="menu__img">
                      <h3 class="menu__name"><b>Bagre Frito</b></h3>
                      <p class="menu__detail">Acompañado de papa francesa, yuca, patacón y ensalada.</p>
                   </div>
@@ -620,12 +692,12 @@
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
             </div>
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/carnes-y-parrilla/" alt="" class="menu__img">
+                     <img src="images/menu/carnes-y-parrilla/bagre-en-salsa.png" alt="" class="menu__img">
                      <h3 class="menu__name"><b>Bagre en Salsa Criolla</b></h3>
                      <p class="menu__detail">Acompañado de papa francesa, yuca, patacón y ensalada.</p>
                   </div>
@@ -638,33 +710,88 @@
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
             </div>
          </div>
          <!-- END MENÚ CARNE Y PARRILLA -->
          <!-- MENÚ COMBO DEL DÍA -->
          <div class="heading" style="margin-top: -8rem;">
-            <h3 class="sub-menu">Combos</h3>
+            <h3 class="sub-menu">Combo</h3>
             <h3 class="title-menu">Del Día</h3>
          </div>
-         <div id="customers-testimonials-pll" class="owl-carousel owl-theme owl-carousel-pll">
+         <div id="customers-testimonials-pll" class="owl-carousel owl-theme owl-carousel-pll" style="margin-top:-4rem">
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/pollo/1.png" alt="" class="menu__img">
-                     <h3 class="menu__name"><b>Mojarra</b></h3>
-                     <p class="menu__detail">Acompañado de papa francesa, arroz, patacón, yuca y ensalada.</p>
+                     <img src="images/menu/combo-del-dia/arroz-con-pollo.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Arroz con Pollo</b></h3>
+                     <p class="menu__detail">Acompañado de papa francesa, yuca, patacón, ensalada y vaso de limonada.
+                     </p>
                   </div>
                   <div class="container">
                      <div class="row details">
-                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$20.000</b></p>
-                        <a data-name="Mojarra" data-price="20000" class="add-to-cart btn btn-primary"
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$12.500</b></p>
+                        <a data-name="Arroz_con_Pollo" data-price="12500" class="add-to-cart btn btn-primary"
                            style="margin: 1rem !important">
                            <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/combo-del-dia/combo-personal.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Combo Personal</b></h3>
+                     <p class="menu__detail">1/4 Pollo Asado, arroz, papa salada, ensalada, sopa y vaso de limonada.</p>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$12.500</b></p>
+                        <a data-name="Combo_Personal" data-price="12500" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/combo-del-dia/bandeja-con-asado.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Bandeja con Pollo Asado</b></h3>
+                     <p class="menu__detail">1/4 Pollo, arroz, papa francesa, patacón, yuca, ensalada y sopa.</p>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$12.500</b></p>
+                        <a data-name="Bandeja_con_Pollo_Asado" data-price="12500" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/combo-del-dia/bandeja-con-pollo-broaster.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Bandeja con Pollo Broaster</b></h3>
+                     <p class="menu__detail">1/4 Pollo, arroz, papa francesa, patacón, yuca y ensalada.</p>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$12.500</b></p>
+                        <a data-name="Bandeja_con_Pollo_Broaster" data-price="12500" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
          <!-- END COMBO DEL DÍA -->
@@ -673,24 +800,136 @@
             <h3 class="sub-menu">Arroz</h3>
             <h3 class="title-menu">Oriental</h3>
          </div>
-         <div id="customers-testimonials-chi" class="owl-carousel owl-theme owl-carousel-chi">
+         <div id="customers-testimonials-chi" class="owl-carousel owl-theme owl-carousel-chi" style="margin-top:-4rem">
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/pollo/1.png" alt="" class="menu__img">
-                     <h3 class="menu__name"><b>Mojarra</b></h3>
-                     <p class="menu__detail">Acompañado de papa francesa, arroz, patacón, yuca y ensalada.</p>
+                     <img src="images/menu/arroz-oriental/arroz-chino-personal.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Arroz Chino Personal</b></h3>
+                     <p class="menu__detail">Acompañado de papa francesa.</p>
                   </div>
                   <div class="container">
                      <div class="row details">
-                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$20.000</b></p>
-                        <a data-name="Mojarra" data-price="20000" class="add-to-cart btn btn-primary"
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$13.000</b></p>
+                        <a data-name="Arroz_Chino_Personal" data-price="13000" class="add-to-cart btn btn-primary"
                            style="margin: 1rem !important">
                            <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/arroz-oriental/arroz-chino-2-costillitas.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Arroz Chino para dos</b></h3>
+                     <p class="menu__detail">Acompañado de papa francesa, Costillitas.</p>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$21.000</b></p>
+                        <a data-name="Arroz_Chino_para_dos_con_Costillitas" data-price="21000"
+                           class="add-to-cart btn btn-primary" style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/arroz-oriental/arroz-chino-2-pollo.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Arroz Chino para dos</b></h3>
+                     <p class="menu__detail">Acompañado de papa francesa, 1/4 Pollo Frito.</p>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$21.000</b></p>
+                        <a data-name="Arroz_Chino_para_dos_con_Pollo_Frito" data-price="21000"
+                           class="add-to-cart btn btn-primary" style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/arroz-oriental/arroz-chino-familiar-costillitas.png" alt=""
+                        class="menu__img">
+                     <h3 class="menu__name"><b>Arroz Chino Familiar</b></h3>
+                     <p class="menu__detail">Acompañado de papa francesa, Costillitas y gaseosa 1.5 lts Postobón.</p>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$33.000</b></p>
+                        <a data-name="Arroz_Chino_Familiar_con_Costillitas" data-price="33000"
+                           class="add-to-cart btn btn-primary" style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/arroz-oriental/arroz-chino-familiar-pollo.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Arroz Chino Familiar</b></h3>
+                     <p class="menu__detail">Acompañado de papa francesa, 1/2 Pollo Frito y gaseosa 1.5 lts Postobón.
+                     </p>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$33.000</b></p>
+                        <a data-name="Arroz_Chino_Familiar_con_Pollo_Frito" data-price="33000"
+                           class="add-to-cart btn btn-primary" style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/arroz-oriental/arroz-chino-super-familiar-costillitas.png" alt=""
+                        class="menu__img">
+                     <h3 class="menu__name"><b>Arroz Chino Super Familiar</b></h3>
+                     <p class="menu__detail">Acompañado de papa francesa, Costillitas y gaseosa 1.5 lts Postobón.</p>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$55.000</b></p>
+                        <a data-name="Arroz_Chino_Super_Familiar_con_Costillitas" data-price="55000"
+                           class="add-to-cart btn btn-primary" style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/arroz-oriental/arroz-chino-super-familiar-pollo.png" alt=""
+                        class="menu__img">
+                     <h3 class="menu__name"><b>Arroz Chino Super Familiar</b></h3>
+                     <p class="menu__detail">Acompañado de papa francesa, 1 Pollo Frito y gaseosa 1.5 lts Postobón.</p>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$55.000</b></p>
+                        <a data-name="Arroz_Chino_Super_Familiar_con_Pollo_Frito" data-price="55000"
+                           class="add-to-cart btn btn-primary" style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
          <!-- END MENÚ ARROZ ORIENTAL -->
@@ -699,24 +938,139 @@
             <h3 class="sub-menu">Mini platos</h3>
             <h3 class="title-menu">A la carta</h3>
          </div>
-         <div id="customers-testimonials-pai" class="owl-carousel owl-theme owl-carousel-pai">
+         <div id="customers-testimonials-pai" class="owl-carousel owl-theme owl-carousel-pai" style="margin-top:-4rem">
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/pollo/1.png" alt="" class="menu__img">
-                     <h3 class="menu__name"><b>Mojarra</b></h3>
-                     <p class="menu__detail">Acompañado de papa francesa, arroz, patacón, yuca y ensalada.</p>
+                     <img src="images/menu/mini-platos/mini-carne-asada.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Mini Carne Asada</b></h3>
+                     <p class="menu__detail">Acompañado de arroz, ensalada, papa francesa, patacón y/o yuca y vaso de
+                        limonada.</p>
                   </div>
                   <div class="container">
                      <div class="row details">
-                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$20.000</b></p>
-                        <a data-name="Mojarra" data-price="20000" class="add-to-cart btn btn-primary"
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$14.500</b></p>
+                        <a data-name="Mini_Carne_Asada" data-price="14500" class="add-to-cart btn btn-primary"
                            style="margin: 1rem !important">
                            <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/mini-platos/mini-filete-de-pechuga.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Mini Filete de Pechuga</b></h3>
+                     <p class="menu__detail">Acompañado de arroz, ensalada, papa francesa, patacón y/o yuca y vaso de
+                        limonada.</p>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$14.500</b></p>
+                        <a data-name="Mini_Filete_de_Pechuga" data-price="14500" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/mini-platos/mini-lomo-de-cerdo.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Mini Lomo de Cerdo</b></h3>
+                     <p class="menu__detail">Acompañado de arroz, ensalada, papa francesa, patacón y/o yuca y vaso de
+                        limonada.</p>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$14.500</b></p>
+                        <a data-name="Mini_Lomo_de_Cerdo" data-price="14500" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/mini-platos/mini-chuleta-de-cerdo.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Mini Chuleta de Cerdo</b></h3>
+                     <p class="menu__detail">Acompañado de arroz, ensalada, papa francesa, patacón y/o yuca y vaso de
+                        limonada.</p>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$14.500</b></p>
+                        <a data-name="Mini_Chuleta_de_Cerdo" data-price="14500" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/mini-platos/mini-costillitas-de-cerdo.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Mini Costillitas de Cerdo</b></h3>
+                     <p class="menu__detail">Acompañado de arroz, ensalada, papa francesa, patacón y/o yuca y vaso de
+                        limonada.</p>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$14.500</b></p>
+                        <a data-name="Mini_Costillitas_de_Cerdo" data-price="14500" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/mini-platos/mini-tabla-mixta.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Mini Tabla Mixta</b></h3>
+                     <p class="menu__detail">Acompañado de arroz, ensalada, papa francesa, patacón y/o yuca y vaso de
+                        limonada.</p>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$14.500</b></p>
+                        <a data-name="Mini_Tabla_Mixta" data-price="14500" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/mini-platos/mini-churrasco.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Mini Churrasco</b></h3>
+                     <p class="menu__detail">Acompañado de arroz, ensalada, papa francesa, patacón y/o yuca y vaso de
+                        limonada.</p>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$14.500</b></p>
+                        <a data-name="Mini_Churrasco" data-price="14500" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
          <!-- END MENU MINI PLATOS A LA CARTA -->
@@ -725,24 +1079,134 @@
             <h3 class="sub-menu">Alitas &</h3>
             <h3 class="title-menu">Sopas</h3>
          </div>
-         <div id="customers-testimonials-emp" class="owl-carousel owl-theme owl-carousel-emp">
+         <div id="customers-testimonials-emp" class="owl-carousel owl-theme owl-carousel-emp" style="margin-top:-4rem">
+            <!-- ALITAS -->
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/pollo/1.png" alt="" class="menu__img">
-                     <h3 class="menu__name"><b>Mojarra</b></h3>
-                     <p class="menu__detail">Acompañado de papa francesa, arroz, patacón, yuca y ensalada.</p>
+                     <img src="images/menu/alitas/alitas-x36.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Alitas x36 Piezas</b></h3>
+                     <p class="menu__detail">Acompañado de tres porciones de francesa y gaseosa 1.5lts.</p>
                   </div>
                   <div class="container">
                      <div class="row details">
-                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$20.000</b></p>
-                        <a data-name="Mojarra" data-price="20000" class="add-to-cart btn btn-primary"
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$49.990</b></p>
+                        <a data-name="Alitas_X36" data-price="49900" class="add-to-cart btn btn-primary"
                            style="margin: 1rem !important">
                            <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/alitas/alitas-x20.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Alitas x20 Piezas</b></h3>
+                     <p class="menu__detail">Acompañado de dos porciones de francesa.</p>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$29.990</b></p>
+                        <a data-name="Alitas_X20" data-price="29900" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/alitas/alitas-x12.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Alitas x12 Piezas</b></h3>
+                     <p class="menu__detail">Acompañado de papa francesa.</p>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$19.990</b></p>
+                        <a data-name="Alitas_X12" data-price="19900" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/alitas/alitas-x8.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Alitas x8 Piezas</b></h3>
+                     <p class="menu__detail">Acompañado de papa francesa.</p>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$14.990</b></p>
+                        <a data-name="Alitas_X8" data-price="14900" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- SOPAS -->
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/sopas/mondongo.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Mondongo</b></h3>
+                     <p class="menu__detail">Acompañado de arroz y aguacate.</p>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$10.000</b></p>
+                        <a data-name="Mondongo" data-price="10000" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/sopas/menudencias.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Menudencias</b></h3>
+                     <p class="menu__detail">Acompañado de arroz.</p>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$6.500</b></p>
+                        <a data-name="Menudencias" data-price="6500" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/sopas/ajiaco.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Ajiaco</b></h3>
+                     <p class="menu__detail">Acompañado de arroz y aguacate.</p>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$12.000</b></p>
+                        <a data-name="Ajiaco" data-price="12000" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
          <!-- END MENÚ ALITAS SOPAS -->
@@ -751,24 +1215,125 @@
             <h3 class="sub-menu">Menú</h3>
             <h3 class="title-menu">Adiciones</h3>
          </div>
-         <div id="customers-testimonials-fast" class="owl-carousel owl-theme owl-carousel-fast">
+         <div id="customers-testimonials-fast" class="owl-carousel owl-theme owl-carousel-fast" style="margin-top:-4rem">
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/pollo/1.png" alt="" class="menu__img">
-                     <h3 class="menu__name"><b>Mojarra</b></h3>
-                     <p class="menu__detail">Acompañado de papa francesa, arroz, patacón, yuca y ensalada.</p>
+                     <img src="images/menu/adiciones/francesa.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Papa Francesa</b></h3>
                   </div>
                   <div class="container">
                      <div class="row details">
-                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$20.000</b></p>
-                        <a data-name="Mojarra" data-price="20000" class="add-to-cart btn btn-primary"
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$4.000</b></p>
+                        <a data-name="Papa_Francesa" data-price="4000" class="add-to-cart btn btn-primary"
                            style="margin: 1rem !important">
                            <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/adiciones/papa_salada.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Papa Salada</b></h3>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$3.500</b></p>
+                        <a data-name="Papa_Salada" data-price="3500" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/adiciones/yucas.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Yuca</b></h3>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$4.000</b></p>
+                        <a data-name="Yuca" data-price="4000" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/adiciones/platano.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Plátano Maduro</b></h3>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$2.500</b></p>
+                        <a data-name="Plátano_Maduro" data-price="2500" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/adiciones/patacones.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Patacón</b></h3>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$4.000</b></p>
+                        <a data-name="Patacón" data-price="4000" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/adiciones/arroz.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Arroz</b></h3>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$3.000</b></p>
+                        <a data-name="Arroz" data-price="3000" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/adiciones/ensalada.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Ensalada</b></h3>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$3.000</b></p>
+                        <a data-name="Ensalada" data-price="3000" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
          <!-- END MENÚ ADICIONES -->
@@ -777,24 +1342,199 @@
             <h3 class="sub-menu">Bebidas &</h3>
             <h3 class="title-menu">Jugos</h3>
          </div>
-         <div id="customers-testimonials-beb" class="owl-carousel owl-theme owl-carousel-beb">
+         <div id="customers-testimonials-beb" class="owl-carousel owl-theme owl-carousel-beb" style="margin-top:-4rem">
             <div class="item menu13">
                <div class="glassBox">
                   <div class="glassBox__imgBox">
-                     <img src="images/menu/pollo/1.png" alt="" class="menu__img">
-                     <h3 class="menu__name"><b>Mojarra</b></h3>
-                     <p class="menu__detail">Acompañado de papa francesa, arroz, patacón, yuca y ensalada.</p>
+                     <img src="images/menu/bebidas/limonada.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Limonada Natural</b></h3>
                   </div>
                   <div class="container">
                      <div class="row details">
-                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$20.000</b></p>
-                        <a data-name="Mojarra" data-price="20000" class="add-to-cart btn btn-primary"
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$3.000</b></p>
+                        <a data-name="Limonada_Natural" data-price="3000" class="add-to-cart btn btn-primary"
                            style="margin: 1rem !important">
                            <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
                         </a>
                      </div>
                   </div>
-                </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/bebidas/gaseosa-350ml.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Gaseosa Postobón 350ml</b></h3>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$2.500</b></p>
+                        <a data-name="Gaseosa_Postobón_350ml" data-price="2500" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/bebidas/hit-350.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Jugo Hit 350ml</b></h3>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$2.500</b></p>
+                        <a data-name="Jugo_Hit_350ml" data-price="2500" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/bebidas/gaseosa-400ml.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Gaseosa 400ml</b></h3>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$2.900</b></p>
+                        <a data-name="Gaseosa_400ml" data-price="2900" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/bebidas/postobon-1.5.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Gaseosa Postobón 1.5lts</b></h3>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$4.500</b></p>
+                        <a data-name="Gaseosa_Postobón_1.5lts" data-price="4500" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/bebidas/gaseosa-1.5-coca-sprite.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Gaseosa Cocola o Sprite 1.5lts</b></h3>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>Coca-Cola: $5.500</b></p>
+                        <a data-name="Gaseosa_Cocacola_1.5lts" data-price="5500" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>Sprite: $5.500</b></p>
+                        <a data-name="Gaseosa_Sprite_1.5lts" data-price="5500" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/bebidas/agua-cristal.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Agua en Botella</b></h3>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>$2.500</b></p>
+                        <a data-name="Agua_en_Botella" data-price="2500" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/bebidas/cerveza.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Cerveza</b></h3>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>Poker: $3.000</b></p>
+                        <a data-name="Cerveza_Poker" data-price="3000" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>Aguila: $3.000</b></p>
+                        <a data-name="Cerveza_Aguila" data-price="3000" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>Miller: $3.000</b></p>
+                        <a data-name="Cerveza_Miller" data-price="3000" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>Costeña: $3.000</b></p>
+                        <a data-name="Cerveza_Costeña" data-price="3000" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>Malta: $3.000</b></p>
+                        <a data-name="Cerveza_Malta" data-price="3000" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="item menu13">
+               <div class="glassBox">
+                  <div class="glassBox__imgBox">
+                     <img src="images/menu/bebidas/cerveza_premium.png" alt="" class="menu__img">
+                     <h3 class="menu__name"><b>Cerveza Premium</b></h3>
+                  </div>
+                  <div class="container">
+                     <div class="row details">
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>Club Colombia: $4.000</b></p>
+                        <a data-name="Cerveza_Nacional_Poker" data-price="4000" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>Aguila Light: $4.000</b></p>
+                        <a data-name="Cerveza_Nacional_Aguila_Light" data-price="4000"
+                           class="add-to-cart btn btn-primary" style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>Heineken: $4.000</b></p>
+                        <a data-name="Cerveza_Nacional_Heineken" data-price="4000" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                        <p class="menu__preci col-sm-8 col-md-8 col-8 text-price"><b>Tecate: $4.000</b></p>
+                        <a data-name="Cerveza_Nacional_Tecate" data-price="4000" class="add-to-cart btn btn-primary"
+                           style="margin: 1rem !important">
+                           <i class="fa fa-shopping-cart" style="font-size: 2rem;"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
          <!-- END BEBIDAS Y JUGOS-->
@@ -995,7 +1735,8 @@
 
             <div class="box">
                <h3>Contactanos</h3>
-               <a href="https://goo.gl/maps/N1eB69R1j75tg8YL9" target="_blank"> <i class="fas fa-map"></i>Cll. 166 #46-65, Bogotá</a>
+               <a href="https://goo.gl/maps/N1eB69R1j75tg8YL9" target="_blank"> <i class="fas fa-map"></i>Cll. 166
+                  #46-65, Bogotá</a>
                <a href="tel:+573209974960"> <i class="fa fa-mobile-alt"></i> Celular: +57 320 997 4960 </a>
                <a href="tel:+573142483126"> <i class="fa fa-mobile-alt"></i> Celular: +57 314 248 3126 </a>
                <a href="tel:6015170173"> <i class="fas fa-phone"></i> Télefono: (601) 517 01 73 </a>
@@ -1006,9 +1747,9 @@
 
             <div class="box">
                <h3>Síguenos</h3>
-               <a href="" target="_blank"> <i class="fab fa-facebook-f"></i>
+               <a href="https://www.facebook.com/profile.php?id=100089768136207" target="_blank"> <i class="fab fa-facebook-f"></i>
                   Facebook </a>
-               <a href="" target="_blank"> <i class="fab fa-instagram"></i>
+               <a href="https://www.instagram.com/pollo_granjero_asadero/" target="_blank"> <i class="fab fa-instagram"></i>
                   Instagram </a>
             </div>
          </div>
@@ -1118,6 +1859,7 @@
    </html>
    <script src="js/bootstrap.bundle.js"></script>
    <script src="js/jquery.min.js"></script>
+   <script src="js/jarallax.min.js"></script>
    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
    <script src="js/owl.carousel.min.js"></script>
    <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
