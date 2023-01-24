@@ -247,7 +247,6 @@ img {
   min-height: 100vh;
   align-items: center;
   z-index: 2;
-  background: url(../images/banner.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -452,10 +451,9 @@ img {
 /*========== MENU ==========*/
 
 .menu {
-  background: url(../images/vectores/patron-1.svg), url(../images/back-menu-3.jpg)  repeat;
+  background: url(../images/vectores/patron-1.svg) repeat, url(../images/back-menu.jpg)  repeat;
   background-size: contain, contain;
-  background-position-x: center, center;
-  background-position-y: center, top;
+  background-position: center, top;
   padding: 2rem 9% !important;
 }
 
@@ -1627,7 +1625,7 @@ input.whats-input[type=text]:focus {
 
 @media (max-width: 768px) {
   .menu {
-    background-size: 200%;
+    background-size: 200%, cover;
   }
   .heading .script-contact {
     font-size: 8rem;
